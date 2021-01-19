@@ -56,13 +56,11 @@ var newColumn = $("<button>");
 newColumn.addClass("col-md-1 col-sm-3 addBtn");
 newColumn.text("Add");
 
+//Displays the task
+createRow.append(hourCol, taskColumn, newColumn);
+displayContent.append(createRow);
+
+});
 
 
-
-
-
-
-
-
-})
 
