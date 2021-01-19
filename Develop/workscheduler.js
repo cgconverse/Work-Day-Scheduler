@@ -52,7 +52,11 @@ if (parseInt(hoursOfDay[i]) === moment().hour()) {
 }
 
 // Here we add a new column for the buttons
-var 
+var newColumn = $("<button>");
+newColumn.addClass("col-md-1 col-sm-3 addBtn");
+newColumn.text("Add");
+
+
 
 
 
