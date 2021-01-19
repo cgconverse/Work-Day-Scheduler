@@ -31,7 +31,15 @@ for (var i = 0; i < hoursOfDay.length; i++) {
 
 // Creating a column for the tasks
     var taskColumn = $("<input>");
-    console.log()
+    console.log(savedTasks);
+    savedTasks.forEach(function(element) {
+        console.log(element);
+        if(element.hour === hoursOfDay[i]) {
+            taskColumn.val(element.task)
+        }
+    });
+
+    taskColumn.addClass("col-md-9 col-sm-6 textarea");
 }
 
 
