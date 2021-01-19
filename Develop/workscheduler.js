@@ -42,7 +42,17 @@ for (var i = 0; i < hoursOfDay.length; i++) {
     taskColumn.addClass("col-md-9 col-sm-6 textarea");
 }
 
+// Organizing the tasks by past/present/future 
+if (parseInt(hoursOfDay[i]) === moment().hour()) {
+    taskColumn.addClass("present");
+} else if (parseInt(hoursOfDay[i] < moment().hour()) {
+    taskColumn.addClass("past");
+} else {
+    taskColumn.addClass("future");
+}
 
+// Here we add a new column for the buttons
+var 
 
 
 
