@@ -62,5 +62,6 @@ displayContent.append(createRow);
 
 });
 
+//When the user clicks "save", the new task will be saved to local storage
 
 

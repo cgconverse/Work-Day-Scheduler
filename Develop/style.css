@@ -5,7 +5,7 @@ body {
 }
 
 textarea{
-  background: transparent;
+  background: powderblue;
   border: none;
   resize: none;
   color: #000000;
@@ -15,10 +15,10 @@ textarea{
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
-  color: black;
+  background-color: powderblue;
+  color: indigo;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid indigo;
 }
 
 .description{
@@ -57,7 +57,7 @@ textarea{
   color: white;
 }
 
-.saveBtn {
+.addBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -65,7 +65,7 @@ textarea{
   color: white;
 }
 
-.saveBtn i:hover {
+.addBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
