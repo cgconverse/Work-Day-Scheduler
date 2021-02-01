@@ -63,5 +63,8 @@ displayContent.append(createRow);
 });
 
 //When the user clicks "save", the new task will be saved to local storage
-
+$(".addBtn").on("click", function() {
+    console.log($(this).parent());
+    console.log($(this).siblings("input"));
+})
 
