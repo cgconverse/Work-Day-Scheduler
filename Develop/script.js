@@ -1,26 +1,27 @@
 $(document).ready(function() {
-    //Current date and time 
+    //This displays the current date and time at the top of the page
     $("#currentDay").text(moment().format("MMMM Do YYYY, h:mma"));
 
-    //Save objects that include both date and time to local storage 
+    //Save objects to local storage 
     var savedTodos = JSON.parse(localStorage.getItem("savedTodos")) || [];
 
 
-    // Work hours array
+    // Created an array for work hours
     var workHours = ["7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19"];
     var mainDisplay = $("#displayContent");
 
     for (var i = 0; i < workHours.length; i++) {
 
-        //Create row
+        //This creates a new row
         var newRow = $("<div>");
         newRow.addClass("row");
         newRow.data("hour", workHours[i])
 
-        //Hour 
+        //This creates a column for the hour 
         var hourColumn = $("<div>");
         hourColumn.addClass("col-md-2 col-sm-3 time-block");
-        //Time with am/pm
+        
+        //Determine if the hour is am or pm
         if (workHours[i] == 12) {
             hourColumn.text("12 pm")
         } else if (workHours[i] > 12) {
@@ -29,7 +30,7 @@ $(document).ready(function() {
             hourColumn.text(parseInt(workHours[i]) + "am");
         }
 
-        //Column for To-do items 
+        //To-dos will go into a column 
         var toDoCol = $("<input>");
         console.log(savedTodos);
         savedTodos.forEach(function(element) {
@@ -40,7 +41,7 @@ $(document).ready(function() {
         });
         toDoCol.addClass("col-md-9 col-sm-6 textarea");
 
-        //Color change for past, present, and future
+        //Color coding for past, present, future
         if (parseInt(workHours[i]) === moment().hour()) {
             toDoCol.addClass("present");
         } else if (parseInt(workHours[i]) < moment().hour()) {
@@ -49,17 +50,17 @@ $(document).ready(function() {
             toDoCol.addClass("future");
         }
 
-        //Add button column
+        //Creating a column for the "save" button
         var newColSave = $("<button>");
         newColSave.addClass("col-md-1 col-sm-3 addBtn");
         newColSave.text("Add");
 
-        //Append to screen 
+        //Appending each column and row to the screen 
         newRow.append(hourColumn, toDoCol, newColSave);
         mainDisplay.append(newRow);
     };
 
-    //Click save to save event into local storage
+    //When the "save" button is clicked, the new to-do will be saved to local storage
     $(".addBtn").on("click", function() {
         console.log($(this).parent());
         console.log($(this).siblings("input"));
