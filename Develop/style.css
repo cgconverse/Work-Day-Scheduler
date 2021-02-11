@@ -32,6 +32,7 @@ textarea {
   text-align: center;
   border-radius: 15px indigo;
   border-color: indigo;
+  background-color: #ffdae0;
 }
 
 .row {
@@ -54,7 +55,7 @@ textarea {
 }
 
 .present {
-  background-color: #ffc0cb;
+  background-color: #ff9394;
   color: indigo;
   border-color: indigo;
 }
