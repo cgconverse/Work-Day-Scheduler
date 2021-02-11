@@ -1,21 +1,23 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  color: indigo;
   line-height: 1;
 }
 
 textarea {
   background: powderblue;
   border: none;
+  border-color: indigo;
   resize: none;
-  color: #000000;
-  border-left: 1px solid black;
+  color: indigo;
+  border-left: 1px solid indigo;
   padding: 10px;
 }
 
 .jumbotron {
   text-align: center;
-  background-image: url(/Develop/image/toy\ story\ clouds.jpg);
+  background-color: powderblue;
   color: indigo;
   border-radius: 35;
   border-bottom: 10px solid indigo;
@@ -23,27 +25,29 @@ textarea {
 
 .description {
   white-space: pre-wrap;
+  border-color: indigo;
 }
 
 .time-block{
   text-align: center;
   border-radius: 15px;
+  border-color: indigo;
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;
+  border-top: 1px solid indigo;
+  border-color: indigo;
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  color: indigo;
+  border-top: 1px dashed indigo;
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #ffff66;
   color: indigo;
 }
 
@@ -58,7 +62,8 @@ textarea {
 }
 
 .addBtn {
-  border-left: 1px solid black;
+  border-left: 1px solid indigo;
+  border-color: indigo;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
