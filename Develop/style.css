@@ -30,7 +30,7 @@ textarea {
 
 .time-block{
   text-align: center;
-  border-radius: 15px;
+  border-radius: 15px indigo;
   border-color: indigo;
 }
 
@@ -44,21 +44,25 @@ textarea {
 .hour {
   color: indigo;
   border-top: 1px dashed indigo;
+  border-color: indigo;
 }
 
 .past {
   background-color: #ffff66;
   color: indigo;
+  border-color: indigo;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #ffc0cb;
   color: indigo;
+  border-color: indigo;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #9bef9b;
   color: indigo;
+  border-color: indigo;
 }
 
 .addBtn {
@@ -66,11 +70,13 @@ textarea {
   border-color: indigo;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
-  color: white;
+  background-color: #b0e0e6;
+  color: indigo;
 }
 
 .addBtn i:hover {
   font-size: 20px;
+  border-color: indigo;
   transition: all .3s ease-in-out;
 }
+
